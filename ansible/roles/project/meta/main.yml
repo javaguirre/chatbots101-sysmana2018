@@ -1,0 +1,13 @@
+---
+
+galaxy_info:
+  author: javaguirre
+  description: Manage Bot Services (installation, configuration)
+  license: MIT
+  min_ansible_version: 2.0
+  platforms:
+    - name: Ubuntu
+  versions:
+    - all
+  categories:
+    - web

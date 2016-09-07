@@ -1,0 +1,8 @@
+---
+- name: Project
+  hosts: all
+  remote_user: vagrant
+  become: false
+
+  roles:
+    - project
