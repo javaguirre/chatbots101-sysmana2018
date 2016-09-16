@@ -11,6 +11,5 @@ Cuando la maquina esta provisionada
 ```bash
 vagrant ssh
 cd project
-source .venv/bin/activate
-python app.py
+bash launch.sh
 ```
