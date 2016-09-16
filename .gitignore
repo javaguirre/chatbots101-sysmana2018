@@ -2,3 +2,4 @@ config_local.yml
 .vagrant
 ansible/vendor
 ansible/site.retry
+db.pickle
