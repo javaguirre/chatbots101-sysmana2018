@@ -21,7 +21,7 @@ class VariableResolutionService(object):
 
         for variable in variables:
             try:
-                response_text = text.replace(
+                response_text = response_text.replace(
                     '{}{}'.format(self.VARIABLES_PREFIX, variable),
                     self.variables[variable]
                 )
