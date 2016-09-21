@@ -14,7 +14,7 @@ class VariableResolutionService(object):
         if not variables_to_be_hidrated:
             return text
 
-        return self.replace(variables_to_be_hidrated)
+        return self.replace(text, variables_to_be_hidrated)
 
     def replace(self, text, variables):
         response_text = text
