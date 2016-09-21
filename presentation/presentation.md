@@ -11,17 +11,17 @@ class: inverse, center
 
 # @javaguirre
 
-![Who Am I](./images/who.jpg)
+[![:scale 70%](./images/reply.png)](https://www.reply.ai)
 
 
 ---
 
 class: inverse, center
 
-# Que es un bot?
+# Qué es un bot?
 
-- Applicación automatiza una tarea
-- Imita comportamiento de un humano
+* Applicación automatiza una tarea
+* Imita comportamiento de un humano
 
 #### [Wikipedia](https://es.wikipedia.org/wiki/Bot)
 
@@ -31,7 +31,7 @@ class: inverse, center
 
 # Uno de los primeros bots
 
-![:scale 70%](./images/clippy.jpg)
+![:scale 90%](./images/clippy.jpg)
 
 
 ---
@@ -40,13 +40,13 @@ class: inverse, center
 
 # Otro bot
 
-![Foto de pajaro de homer](./images/homer-pajaro.jpg)
+![Foto de pájaro de homer](./images/homer-pajaro.jpg)
 
 ---
 
 class: inverse, center
 
-# Que es un chatbot?
+# Qué es un chatbot?
 
 * Un servicio
 * Interfaz mensajería
@@ -76,8 +76,8 @@ class: inverse, center
 
 # Tipos de chatbot
 
-## Por reglas
-## Por I.A.
+* Reglas
+* I.A.
 
 ---
 
@@ -101,17 +101,17 @@ class: inverse, center
 
 # Apps
 
-- Desarrollo costoso
-- Cuota de usuarios no justifica inversión
-- Coste de adquisicion de usuarios costoso
-- Demasiadas apps, difícil distinguirse
-- Usuarios usan pequeño número de apps
+* Desarrollo costoso
+* Cuota de usuarios no justifica inversión
+* Coste de adquisicion de usuarios costoso
+* Demasiadas apps, difícil distinguirse
+* Usuarios usan pequeño número de apps
 
 # Bots
 
-- Uso más natural
-- Necesita contexto
-- Misma inversión en infraestructura que apps
+* Uso más natural
+* Necesita contexto
+* Misma inversión en infraestructura que apps
 
 ---
 
