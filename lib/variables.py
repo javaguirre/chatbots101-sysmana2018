@@ -20,9 +20,13 @@ class VariableResolutionService(object):
         response_text = text
 
         for variable in variables:
-            response_text = text.replace(
-                '{}{}'.format(self.VARIABLES_PREFIX, variable),
-                self.variables[variable]
-            )
+            try:
+                response_text = text.replace(
+                    '{}{}'.format(self.VARIABLES_PREFIX, variable),
+                    self.variables[variable]
+                )
+            except KeyError:
+                # Empty
+                pass
 
         return response_text

@@ -36,6 +36,7 @@ class FlowService(object):
     # STEPS
     NOT_STARTED_STEP = -1
     START_STEP = 0
+    ORDER_STEP = 1
 
     def __init__(self, chat_id, extra_variables):
         self.persist = PersistLayerService()
@@ -44,7 +45,7 @@ class FlowService(object):
         self.current_step = current_data.get(chat_id, self.START_STEP)
 
         self.variables = VariableResolutionService({
-            'hour': datetime.now() + timedelta(hours=1),
+            'hour': (datetime.now() + timedelta(hours=1)).strftime('%H'),
             'name': extra_variables['name']
         })
 
@@ -79,7 +80,7 @@ class FlowService(object):
         try:
             return step[text]
         except KeyError:
-            if 'other' in step:
+            if 'other' in step or step == self.ORDER_STEP:
                 return step['other']
             else:
                 return step['error']

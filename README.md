@@ -13,3 +13,9 @@ vagrant ssh
 cd project
 bash launch.sh
 ```
+
+## Ejecutar tests
+
+```bash
+python -m unittest discover
+```
