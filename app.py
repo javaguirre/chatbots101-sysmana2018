@@ -27,6 +27,9 @@ def process_post_request(request):
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
+    persist = PersistLayerService()
+    persist.init()
+
     if request.method == 'POST':
         return process_post_request(request)
 
@@ -45,7 +48,9 @@ def webhook():
     except KeyError:
         return 'The POST data is not valid', 400
 
-    flow_service = FlowService(extra_variables={'name': username})
+    flow_service = FlowService(
+        chat_id=chat_id,
+        extra_variables={'name': username})
     response = flow_service.process(text)
     TelegramBotService.send(persist.get()['api_key'], chat_id, response)
 

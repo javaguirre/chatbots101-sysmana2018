@@ -13,15 +13,17 @@ class PersistLayerService(object):
     def save(self, data):
         pickle.dump(data, open(self.DB_FILE, 'wb'))
 
-    def update_step(self, step):
+    def init(self):
+        self.save({})
+
+    def update_step(self, chat_id, step):
         data = self.get()
-        # TODO Per chat_id
-        data['current_step'] = step
+        data[chat_id] = step
         self.save(data)
 
         return data
 
-    def remove_current_step(self):
+    def remove_current_step(self, chat_id):
         data = self.get()
-        del data['current_step']
+        del data[chat_id]
         self.save(data)
