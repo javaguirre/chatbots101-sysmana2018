@@ -11,7 +11,7 @@
 - name: Install via PIP and virtualenv
   become: false
   pip: |
-    chdir={{ bot_services_path }}
-    virtualenv={{ bot_services_path }}/.venv
+    chdir={{ project_path }}
+    virtualenv={{ project_path }}/.venv
     virtualenv_command={{ virtualenv_path }}
     requirements=requirements.txt

@@ -1,5 +1,5 @@
 ---
 
-bot_services_user: vagrant
-bot_services_path: /home/{{ bot_services_user }}/project
+project_user: "{{ remote_user }}"
+project_path: /home/{{ bot_services_user }}/project
 virtualenv_path: /usr/bin/virtualenv
