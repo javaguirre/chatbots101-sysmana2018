@@ -8,7 +8,14 @@ class PersistLayerService(object):
         return bool(data.get('api_key', None))
 
     def get(self):
-        return pickle.load(open(self.DB_FILE, 'rb'))
+        data = {}
+
+        try:
+            data = pickle.load(open(self.DB_FILE, 'rb'))
+        except IOError:
+            self.init()
+
+        return data
 
     def save(self, data):
         pickle.dump(data, open(self.DB_FILE, 'wb'))

@@ -43,9 +43,6 @@ class FlowService(object):
         self.chat_id = chat_id
         self.current_step = current_data.get(chat_id, self.START_STEP)
 
-        if self.current_step is None:
-            self.current_step = self.START_STEP
-
         self.variables = VariableResolutionService({
             'hour': datetime.now() + timedelta(hours=1),
             'name': extra_variables['name']

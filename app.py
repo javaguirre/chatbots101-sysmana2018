@@ -27,9 +27,6 @@ def process_post_request(request):
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
-    persist = PersistLayerService()
-    persist.init()
-
     if request.method == 'POST':
         return process_post_request(request)
 
