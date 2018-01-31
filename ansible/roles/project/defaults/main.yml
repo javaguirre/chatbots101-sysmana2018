@@ -1,5 +1,0 @@
----
-
-project_user: "{{ remote_user }}"
-project_path: /home/{{ project_user }}/project
-virtualenv_path: /usr/bin/virtualenv

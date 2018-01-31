@@ -8,6 +8,10 @@ h1, h2 {
     font-weight: normal;
 }
 
+li {
+    font-size: 1.4em;
+}
+
 h4, a {
     color: white;
 }
@@ -45,4 +49,8 @@ h4, a {
 
 .clear {
     margin-bottom: 400px;
+}
+
+.bigger {
+    font-size: 3em;
 }
